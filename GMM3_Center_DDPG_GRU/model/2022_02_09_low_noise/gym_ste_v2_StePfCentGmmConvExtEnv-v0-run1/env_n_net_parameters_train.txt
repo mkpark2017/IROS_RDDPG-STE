@@ -1,0 +1,51 @@
+Environment Paramters
+{
+  "seed": 8201033333333,
+  "gas_d": 10.636360778187356 m^2/s (diffusivity),
+  "gas_t": 527.6285117172484 s (gas life time),
+  "gas_q": 1917.3362496312325 mg/s (gas strength),
+  "wind_mean_phi": 87.34264064802169 degree,
+  "wind_mean_speed": 2.959227107553833 m/s,
+  "court_lx": 60 m,
+  "court_lx": 60 m,
+}
+Agent Paramters
+{
+  "max_steps": 300,
+  "agent_v": 4 m/s,
+  "delta_t": 1 s,
+  "pf_num": 200,
+  "conc_max": 100 mg/m^3,
+  "env_sig": 0.2 mg/m^3,
+  "sensor_sig_m":  0.1,
+  "eps:"  8.0 m (success criteria distance), 
+  "conv_eps:"  0.05 m (success criteria particle converge STD), 
+}
+Learning Parameters
+{
+  "mode": "train",
+  "env": "gym_ste_v2:StePfCentGmmConvExtEnv-v0",
+  "hidden_1": 256,
+  "hidden_2": 64,
+  "hidden_3": 32,
+  "n_layers": 1,
+  "rate": 0.0001,
+  "prate": 1e-05,
+  "discount": 0.95,
+  "init_w": 0.003,
+  "tau": 0.0001,
+  "drop_prob": 0.2,
+  "rbsize": 100000,
+  "bsize": 128,
+  "blength": 1,
+  "warmup": 100000,
+  "max_episodes": 100000,
+  "max_episode_length": 300,
+  "validate_episodes": 20,
+  "validate_interval": 1000,
+  "epsilon_rate": 0.1,
+  "pause_time": 0,
+  "model_path": "model/2022_02_09_low_noise/gym_ste_v2:StePfCentGmmConvExtEnv-v0-run1",
+  "model_path_current": "model/2022_02_09_low_noise_current/gym_ste_v2:StePfCentGmmConvExtEnv-v0-run1",
+  "device_idx": 0
+}
