@@ -1,0 +1,35 @@
+Environment Paramters
+{
+  "seed": 8201076236150,
+  "gas_d": 11.749028569594365 m^2/s (diffusivity),
+  "gas_t": 1349.6156607208554 s (gas life time),
+  "gas_q": 2111.282714328987 mg/s (gas strength),
+  "wind_mean_phi": -141.08235379338402 degree,
+  "wind_mean_speed": 3.1564090491709322 m/s,
+  "court_lx": 60 m,
+  "court_lx": 60 m,
+}
+Agent Paramters
+{
+  "max_steps": 300,
+  "agent_v": 6 m/s,
+  "delta_t": 1 s,
+  "pf_num": 3000,
+  "conc_max": 100 mg/m^3,
+  "env_sig": 0.2 mg/m^3,
+  "sensor_sig_m":  0.1,
+  "eps:"  1.0 m (success criteria distance), 
+  "conv_eps:"  0.05 m (success criteria particle converge STD), 
+}
+Learning Parameters
+{
+  "env_sig": 0.2,
+  "sensor_sig_m": 0.1,
+  "pf_num": 3000,
+  "court_ly": 60.0,
+  "court_lx": 60.0,
+  "gas_t": 1349.6156607208554,
+  "gas_d": 11.749028569594365,
+  "model_path": ".",
+  "mode": "test"
+}
